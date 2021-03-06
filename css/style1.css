@@ -76,17 +76,31 @@ p {
   }
 }
 
-.icon-block {
-  padding: 0 15px;
+
+
+.parallax-container-one {
+  min-height: 420px;
+  line-height: 0;
+  height: cover;
 }
-.icon-block .material-icons {
-  font-size: inherit;
+  
+
+.parallax-container-one .section {
+  width: 100%;
 }
 
-.footer-copyright {
-  font-size: 15px;
+@media only screen and (max-width : 992px) {
+  .parallax-container-one .section {
+    position: absolute;
+    top: 40%;
+  }
+  #index-banner .section {
+    top: 10%;
+  }
 }
 
-footer.page-footer {
-  margin: 0;
+@media only screen and (max-width : 600px) {
+  #index-banner .section {
+    top: 0;
+  }
 }

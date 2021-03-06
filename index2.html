@@ -37,7 +37,9 @@
 </head>
 <body>
 
-  <nav class="white" role="navigation">
+
+
+  <nav class="transp" role="navigation">
     <div class="nav-wrapper container">
       <a id="logo-container" href="#" class="brand-logo">⁠<b>P⁠O⁠K⁠ÉM⁠O⁠N⁠ ⁠L⁠E⁠A⁠G⁠U⁠E</b></a>
       <ul class="right hide-on-med-and-down">
@@ -47,6 +49,7 @@
       </ul>
 
       <ul id="nav-mobile" class="side-nav">
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="black"><b>P⁠O⁠K⁠ÉM⁠O⁠N⁠ ⁠L⁠E⁠A⁠G⁠U⁠E</b></font>
         <li class="active"><a href="/">Home</a></li>
         <!-- <li><a href="events/events.html">Events</a></li> -->
         <li><a href="mailto:pokemonleague@protonmail.com">Contact</a></li>
@@ -55,8 +58,12 @@
       <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
     </div>
   </nav>
+  <div id="index-banner" class="parallax-container" style="top: -64px;">
+      <canvas id="canvas3d"></canvas>
+  </div>
 
-  <div id="index-banner" class="parallax-container">
+  <!--    
+  <div id="index-banner" class="parallax-container-one">
     <div class="section no-pad-bot">
     	<h3 class="animated flipInX center"><img src="img/pokemongo.png" width="250px" class="animated infinite pulse"></h3>
     	<h5 class="header col s12 light animated fadeInUp center"><img src="img/indigo.png" width="150px"></h5>
@@ -69,6 +76,7 @@
       </div>
     </div>
   </div>
+  -->
 
   <div class="container">
     <div class="section" id="learnMore">
@@ -105,10 +113,12 @@
 
     </div>
   </div>
-
+  
+  <div class="row">
   <div class="parallax-container valign-wrapper">
+    <div class="col s12 center">
     <div class="section no-pad-bot">
-      <center><h5 class="header col s12 light"><img src="img/player2.png" width="150px" class="animated fadeInLeft animate__delay-2s"><img src="img/player.png" width="150px" class="animated fadeInRight animate__delay-2s"></h5></center>
+      <center><h5><img src="img/player2.png" width="150px" class="animated fadeInLeft"><img src="img/player.png" width="150px" class="animated fadeInRight animate__delay-2s"></h5></center>
       <div class="container">
         <div class="row center">
           
@@ -116,23 +126,24 @@
         </div>
       </div>
     </div>
+  </div>
     <div class="parallax"><img src="background3.jpg" alt="Unsplashed background img 3"></div>
   </div>
+</div>
 
   <div class="container">
     <div class="section">
 
       <div class="row">
         <div class="col s12 center">
-          <h3><i class="mdi-content-send brown-text"></i></h3>
+          <h3><i class="mdi-content-send black-text"></i></h3>
           <h4>Join The League!</h4>
-          <p>[ Indigo League Ends: 10/10/21 ]</p>
           <br>
           <img src="img/trainer-badge.png" width="150px">&nbsp;&nbsp;<img src="img/gym-badge.png" width="150px">
           <br>
           <br>
           <p class="center light"><img src="img/qr.png" width="150px" class="animated infinite pulse"></p>
-          <div class="ao center" style="color: #b2bec3;"><i class="fab fa-apple fa-lg"></i>&nbsp;&nbsp;&nbsp;<i class="fab fa-android fa-lg"></i></div>
+          <div class="ao center" style="color: #b2bec3;"><i class="fas fa-mobile-alt fa-lg"></i></div>
           <br>
           <br>
           <div class="row center animated fadeIn">
@@ -142,6 +153,25 @@
       </div>
 
     </div>
+  </div>
+ 
+ <div class="row">
+  <div class="parallax-container valign-wrapper">
+    <div class="col s12 center">
+      <div align="center" style="font-size: 15px; font-weight: bold;">CURRENT LEAGUE:</div>
+      <br>
+      <br>
+      <br>
+      <center><h5 class="header col s12 light"><img src="img/pokeball2.png" width="150px" class="animated fadeIn"><br><br></h5></center>
+      <br>
+      <br>
+      <div class="container">
+        <div class="row center">
+          <center><font size="10px"><b>[ INDIGO ]</b></font></center>
+        </div>
+      </div>
+    </div>
+    <div class="parallax"><img src="background3.jpg" alt="Unsplashed background img 3"></div>
   </div>
 
   <footer class="page-footer center grey lighten-3">
@@ -156,6 +186,7 @@
 
     <div class="footer-copyright center grey lighten-5">
       <div class="container black-text">
+        <br>
         <small>Made with <font color="red"><b><3</b></font> in WA. | <a href="https://pokemonleague.github.io/privacy">Privacy Policy</a></small><br>
         <small>&copy; 2021 ⁠P⁠O⁠K⁠ÉM⁠O⁠N⁠ ⁠L⁠E⁠A⁠G⁠U⁠E. ALL RIGHTS RESERVED.</small></br>
         <small>Disclaimer: this is a fan-based project & is not affiliated with Pokémon® <br>Pokémon GO®, The Pokémon Company®, or Niantic® in any way.</small>
@@ -165,6 +196,17 @@
 
 
   <!--  Scripts-->
+  <script>
+      // Global namespace (backwards-compatibility)
+      var SPE = {};
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+  <script src="https://cdn.spline.design/lib/anime.min.js"></script>
+  <script src="https://cdn.spline.design/lib/spline.runtime.min.js"></script>
+  <script src="js/assets.js"></script>
+  <script src="js/scene.js"></script>
+  <script src="js/main.js"></script>
+
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="js/materialize.js"></script>
   <script src="js/init.js"></script>
