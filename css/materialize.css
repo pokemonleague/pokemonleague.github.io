@@ -4069,6 +4069,10 @@ nav .button-collapse {
   margin: 0 18px;
 }
 
+.button-collapse {
+  color: black !important;
+}
+
 nav .button-collapse i {
   height: 56px;
   line-height: 56px;
